@@ -1,0 +1,294 @@
+ 
+        /* Estilos personalizados adicionales */
+        body {
+            font-family: 'Inter', sans-serif; /* Fuente Inter */
+            background-color: #f8f9fa; /* bg-light de Bootstrap como fondo general */
+        }
+        /* Colores personalizados (manteniendo los nombres originales para referencia) */
+        .bg-brand-yellow-light { background-color: #fffbeb !important; }
+        .bg-brand-yellow-medium { background-color: #fef3c7 !important; }
+        .bg-brand-yellow-dark { background-color: #fde68a !important; }
+        .bg-brand-green-light { background-color: #f0fdf4 !important; }
+        .bg-brand-green-medium { background-color: #dcfce7 !important; }
+        .bg-brand-green-dark { background-color: #bbf7d0 !important; }
+        .text-brand-brown { color: #78350f !important; }
+        .border-brand-brown { border-color: #a16207 !important; }
+        .btn-brand-yellow {
+            background-color: #fde68a;
+            color: #78350f;
+            border-color: #facc15; /* Un borde ligeramente más oscuro */
+            font-weight: bold;
+        }
+        .btn-brand-yellow:hover {
+            background-color: #fde047;
+            color: #78350f;
+            border-color: #facc15;
+        }
+         .btn-brand-green {
+            background-color: #bbf7d0;
+            color: #14532d; /* Verde oscuro para texto */
+            border-color: #86efac;
+            font-weight: bold;
+        }
+        .btn-brand-green:hover {
+            background-color: #a7f3d0;
+            color: #14532d;
+            border-color: #86efac;
+        }
+
+
+        /* Estilos para el carrusel simple (adaptado) */
+        .carousel-container {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 1rem;
+            padding-bottom: 1rem;
+            scrollbar-width: none; /* Firefox */
+        }
+        .carousel-container::-webkit-scrollbar { display: none; } /* Chrome/Safari */
+
+        .carousel-item-custom { /* Renombrado para evitar conflicto con Bootstrap */
+            scroll-snap-align: start;
+            flex: 0 0 auto;
+            width: 80px;
+            height: 80px;
+            cursor: pointer;
+            border: 2px solid transparent; /* Borde inicial transparente */
+            transition: border-color 0.2s ease-in-out; /* Transición suave */
+        }
+        .carousel-item-custom:hover {
+             border-color: #fde68a; /* bg-brand-yellow-dark */
+        }
+        .carousel-item-custom.selected {
+            border-color: #fde68a; /* bg-brand-yellow-dark */
+            background-color: #fef9c3; /* Un amarillo muy claro para indicar selección */
+        }
+         /* Estilo para producto seleccionado en el carrusel principal */
+        .product-item.selected {
+            border-color: #fde68a !important; /* bg-brand-yellow-dark */
+            background-color: #fef9c3 !important; /* Un amarillo muy claro */
+            font-weight: bold;
+        }
+
+        /* Estilo para categoría seleccionada */
+        .category-item.active { /* Usar clase 'active' de Bootstrap */
+            background-color: #e9ecef; /* gris claro de Bootstrap */
+            font-weight: bold;
+            color: #000;
+        }
+        .category-item:hover {
+            background-color: #fef3c7; /* bg-brand-yellow-medium */
+        }
+
+        /* Ajustes menores */
+        .list-group-item {
+            cursor: pointer;
+        }
+        .form-control:focus, .form-select:focus {
+            border-color: #fde68a; /* bg-brand-yellow-dark */
+            box-shadow: 0 0 0 0.25rem rgba(253, 230, 138, 0.5); /* Sombra de foco amarilla */
+        }
+        .quantity-input {
+            width: 50px !important; /* Ancho fijo para input de cantidad */
+            text-align: center;
+        }
+        .cart-item-img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            border-radius: 0.25rem; /* rounded-sm */
+        }
+        .product-img-carousel {
+             width: 50px;
+             height: 50px;
+             object-fit: contain;
+             margin-bottom: 0.25rem; /* mb-1 */
+        }
+         .product-img-carousel-small {
+             width: 30px;
+             height: 30px;
+             object-fit: contain;
+             margin-bottom: 0.25rem; /* mb-1 */
+         }
+         .unit-button.active {
+             background-color: #e9ecef; /* bg-gray-200 */
+             font-weight: bold;
+         }
+         /* Asegurar que las columnas laterales se oculten correctamente en móvil */
+         @media (max-width: 767.98px) {
+            #categories-column.collapse:not(.show),
+            #cart-column.collapse:not(.show) {
+                display: none;
+            }
+         }
+         
+         .sizelogo{
+            height: 80px; 
+            width: 80px;
+         }
+         
+         .imgcarrito{
+           width: 85px; padding-left: 10px; padding-right: 20px; padding-top: 10px;
+         }
+         
+         .imginiciosesion{
+          width: 80px; padding-left: 10px; padding-right: 20px; padding-top: 10px;
+         }
+         
+         .pinfo{
+            color: #78350f !important;
+         }
+         
+         .barinfo{
+            text-align: center; background : orange; margin-top: 3px; padding-top: 3px;
+         }
+  
+  
+  
+  /* productos */
+  .produc_to{
+    width: 80px; padding-left: 10px; padding-right: 20px; padding-top: 10px;        
+  }      
+  
+  .listopcion{
+    width: 70px;  
+  }      
+  
+  .seleclistopcion{
+    width: 80px; padding-left: 10px; padding-right: 20px; padding-top: 10px;  display: flex;
+  }                  
+  
+  .seleclistopcion-det{
+    width: 90px; display: flex;
+  }
+  
+  .seleclistopcion-detpro{
+    margin-top:8px; text-align: center;
+  }
+  
+  
+   
+        .container {
+            position: relative;
+        }
+        .nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer; /* Agrega un cursor de puntero para indicar que son clickeables */
+        }
+        .nav-prev    {
+            left: 0;
+        }
+        .nav-next {
+            right: 0;
+        }
+        .seleclistopcion-detpro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 150px; /* Ajusta el ancho según tus necesidades */
+        }
+        .seleclistopcion-det {
+            max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+            height: auto;
+        }
+        #image-container {
+            overflow-x: auto;
+            white-space: nowrap;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch; /* Para desplazamiento suave en iOS */
+        }
+
+        #image-container > * {
+            scroll-snap-align: start;
+            flex-shrink: 0;
+        }
+
+        /* Estilos para ocultar las barras de desplazamiento en Chrome, Safari y Edge */
+        #image-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Estilos para ocultar las barras de desplazamiento en Firefox */
+        #image-container {
+            -ms-overflow-style: none;  /* IE y Edge */
+            scrollbar-width: none; /* Firefox */
+        }       
+       
+       
+        .nav-prevdetpro {
+            left: 0;
+        }
+        .nav-nextdetpro {
+            right: 0;
+        }
+        
+        .bg-orange{
+          background-color: orange;  
+        }
+        
+        .pos-rel{
+          position: relative; 
+        }        
+                
+        .items-list-car{
+           min-height: 100px; 
+           max-height: 300px; 
+           overflow-y: auto;           
+        }
+
+        .w-auto{
+          width: auto;   
+        }
+        
+                   
+        .expand-icon {
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+        .expand-icon:hover {
+            transform: scale(1.2);
+        }
+        #product-section {
+            transition: all 0.3s ease; /* Transición suave para cambios de tamaño */
+        }
+        .cart-icon {
+            display: none; /* Inicialmente oculto */
+            margin-right: 0.5rem;
+            cursor: pointer; /* Añadido cursor pointer para indicar que es clickeable */
+        }
+        .cart-icon:hover {
+             transform: scale(1.2);
+        }        
+        
+        
+         .sizelogo2{
+            height: 45px; 
+            width: 45px;
+         }                          
+      
+      
+        .sizelogo3{
+            height: 350px;
+            width : 800px;
+         }        
+  
+ .mi-estilo {
+    color: blue;
+    font-size: 16px;
+}
+  
+  /* Estilos personalizados para el div y el aside */   
+  .show-cart {
+    display: block !important;
+  }
+        
+  .hide-cart {
+    display: none;
+  }       
+         
+  
+  
