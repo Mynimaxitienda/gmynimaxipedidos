@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmynimaxitienda: Inicio</title>
+    <link rel="icon" type="image/x-xicon" href="https://raw.githubusercontent.com/Mynimaxitienda/gmynimaxitiendaimagenes/refs/heads/main/Navbar/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./css/gmynimaxihome.css">
+</head>
+<body>
+
+    <div id="main-interface" class="main-interface-container">
+
+        <header class="header">
+            <nav class="navbar">
+                <img src="https://raw.githubusercontent.com/Mynimaxitienda/gmynimaxitiendaimagenes/refs/heads/main/Navbar/logo.png" alt="Logo Gmynimaxitienda" class="navbar-logo">
+                <div class="navbar-icons">
+                    <button id="claim-coupon-button" class="btn navbar-icon-button">
+                        <img src="https://raw.githubusercontent.com/Mynimaxitienda/gmynimaxitiendaimagenes/refs/heads/main/Navbar/sliderencab/bono1.png" alt="Bono por compra" class="navbar-icon">
+                    </button>
+                    <button id="empty-cart-button" class="btn navbar-icon-button">
+                        <img src="https://raw.githubusercontent.com/Mynimaxitienda/gmynimaxitiendaimagenes/refs/heads/main/Navbar/sliderencab/carritovacio4.png" alt="Carrito vacío" class="navbar-icon">
+                    </button>
+                    <button id="filled-cart-button" class="btn navbar-icon-button" style="display:none;">
+                        <img src="https://raw.githubusercontent.com/Mynimaxitienda/gmynimaxitiendaimagenes/refs/heads/main/Navbar/sliderencab/carritolleno2.png" alt="Carrito lleno" class="navbar-icon">
+                    </button>
+                </div>
+                <div class="user-widget">
+                    <span id="display-user-name" class="user-name"></span>
+                    <button id="access-splash-button" class="btn access-button">Acceder</button>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <section class="promotion-section-wrapper">
+                <div class="promotion-card">
+                    <div class="promo-header">
+                        <img src="https://raw.githubusercontent.com/Mynimaxitienda/gmynimaxitiendaimagenes/refs/heads/main/Navbar/sliderencab/Bono2x1Aplicar.jpeg" alt="Bono 2x1 Chicharrones" class="promo-main-image">
+                    </div>
+                </div>
+            </section>
+
+            <section class="chatbot-section-wrapper">
+                <div class="chatbot-title-bar">
+                    <h2 class="section-title">Gmynimaxitienda <span class="highlight-text">1 Promoción</span> Disponible</h2>
+                </div>
+                <div class="chatbot-container">
+                    <div class="chatbot-header d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <img src="https://github.com/aimoteles/aimotelesimg/blob/3aec5600c6cd8330e20e208943cd869a78542498/chatbot/chatbotai-nbg-1.png?raw=true" alt="Chatbot Icon" class="chatbot-title-icon">
+                            <span class="chatbot-title">Gmynimaxitienda. Asistente Virtual</span>
+                        </div>
+                        <div class="chatbot-header-icons">
+                            <button class="btn-trash-chatbot" id="clearChatbotButton">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                            <button class="btn-close-chatbot" id="closeChatbotButton">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="chatbot-body" id="chatbotBody">
+                        <div class="chatbot-message user-message">
+                            Hola ¿Cómo estás? Soy tu Asistente virtual, ¿Qué necesitas hoy?
+                        </div>
+                        <div class="chatbot-message bot-message">
+                            Por favor, inicia sesión para acceder a toda la información. <a href="index3.html" style="color: #4285F4;">Inicia sesión con Google para continuar.</a>
+                        </div>
+                    </div>
+                    <div class="chatbot-input">
+                        <input type="text" class="form-control" placeholder="Escribe tu mensaje ...">
+                        <button class="btn-send">
+                            <img src="https://github.com/aimoteles/aimotelesimg/blob/3aec5600c6cd8330e20e208943cd869a78542498/chatbot/enviarmsjai-nbg-1.png?raw=true" alt="Enviar Icon">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="quick-access-buttons">
+                    <button class="btn btn-quick-access btn-promo">Promo 2x1</button>
+                    <button class="btn btn-quick-access btn-products">Productos</button>
+                    <button class="btn btn-quick-access btn-cart">Carrito</button>
+                    <button class="btn btn-quick-access btn-redeem-coupon">Redimir Bono</button>
+                    <button class="btn btn-quick-access btn-pay">Pagar</button>
+                </div>
+            </section>           
+        </main>
+
+        <footer class="footer">
+            <div class="container-fluid footer-content">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>&copy; 2024 Gmynimaxitienda. Reservados todos los derechos</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./js/home3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/es.js"></script>
+    <script type="module" src="./js/aigmynimaxichatbotv2.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gmynimaxitienda - Autenticación</title>
+  <link rel="icon" type="image/x-xicon" href="https://raw.githubusercontent.com/Mynimaxitienda/gmynimaxitiendaimagenes/refs/heads/main/Navbar/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/webappstyles3.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="login-container">
+    <img src="https://raw.githubusercontent.com/Mynimaxitienda/gmynimaxitiendaimagenes/refs/heads/main/Navbar/logo.png" alt="Logo Gmynimaxitienda" class="logo">
+    <div class="welcome-text">
+      <p>Bienvenido a la Tienda</p>
+      <p>Gmynimaxitienda</p>
+    </div>
+    <div class="container-img">
+      <img id="user-image" src="https://raw.githubusercontent.com/Mynimaxitienda/gmynimaxitiendaimagenes/refs/heads/main/Navbar/sliderencab/usuarioinac.png" alt="Imagen de usuario" class="centered-image">
+    </div>
+
+    <div id="google-signin-section">
+      <div id="google-signin-button" class="google-button">
+        <span class="google-text">Inicio de sesión con Google</span>
+      </div>
+      <div id="info-label" class="info-google-text">Inicia sesión con Google para continuar.</div>
+    </div>
+
+    <div id="user-logged-in-section" class="hidden">
+      <div id="user-info" class="text-center">
+        <span id="user-name"></span>
+      </div>
+      <button id="logout-button" class="btn logout-button">Cerrar sesión</button>
+    </div>
+    
+    <div id="error-message" class="error-message"></div>
+    
+    <div class="continue-button-container">
+      <button id="continue-button" class="btn continue-button">Pide Ya...</button>
+    </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="./js/index3.js"></script>
+</body>
+
+</html>
