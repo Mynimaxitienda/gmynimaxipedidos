@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Iframe</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Evita barras de desplazamiento en el body/html */
+            height: 100%;
+            width: 100%;
+        }
+        iframe {
+            width: 100vw;   /* 100% del ancho del viewport */
+            height: 100%;  /* 100% del alto del viewport */
+            border: none;   /*  ... Elimina el borde predeterminado del iframe */
+            display: block; /* Asegura que el iframe ocupe todo el espacio disponible */
+        }
+    </style>
+</head>
+<body>
+    <!-- version 20 julio -->
+    <iframe src="./public/index3.html" title="Contenido principal"></iframe>
+</body>
+</html>
