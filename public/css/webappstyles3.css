@@ -1,0 +1,212 @@
+/* Estilos generales */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('https://raw.githubusercontent.com/Mynimaxitienda/gmynimaxitiendaimagenes/refs/heads/main/fondos/fondo1.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333; /* Default text color */
+}
+
+/* Main login container */
+.login-container {
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+  padding: 80px 30px; /* Vertical and horizontal padding */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Darker, extended shadow */
+  text-align: center;
+  max-width: 400px; /* Maintain max-width at 400px */
+  width: 90%; /* Ensure responsiveness */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px; /* Space between elements */
+  color: #333; /* Dark text color for contrast with light container background */
+}
+
+/* Logo */
+.logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+/* Welcome text */
+.welcome-text p {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #FF8C00; /* Orange for welcome text */
+}
+
+.welcome-text p:last-child {
+  font-size: 1.5em;
+  color: #FFA500; /* Brighter orange for store name */
+}
+
+/* User image container */
+.container-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFD700;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.centered-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+/* Google Sign-In Button */
+.google-button {
+  background-color: #FFD700; /* Dorado para el botón de Google, como en la imagen */
+  color: #333; /* Texto oscuro para contrastar */
+  padding: 12px 30px; /* Ajustar padding para más circularidad */
+  border-radius: 25px; /* Más circular */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: none; /* Sin borde */
+  white-space: nowrap; /* Prevent text wrapping */
+  margin-bottom: 10px; /* Aumentar el margen inferior para separar de la info */
+}
+
+.google-button:hover {
+  background-color: #FFC107; /* Darker gold on hover */
+  transform: translateY(-2px);
+}
+
+/* Info text below Google button */
+.info-google-text {
+  font-size: 0.9em;
+  color: #888; /* Lighter gray for more subtlety */
+  margin-top: 0; /* Eliminar el margen negativo */
+  margin-bottom: 15px; /* Espacio con el siguiente elemento */
+}
+
+/* User info and info label (when logged in) */
+#user-info,
+#info-label {
+  font-size: 1em;
+  color: #555;
+}
+
+#user-name {
+  font-weight: 600;
+  color: #FF8C00;
+}
+
+/* General buttons */
+.btn {
+  padding: 10px 20px;
+  border-radius: 25px; /* More rounded borders for action buttons */
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: none; /* No border by default */
+}
+
+/* "Pide Ya..." button */
+.continue-button {
+  background-color: #80EF80; /* Pastel green from the image */
+  color: #333; /* Black text */
+  font-size: 1.2em;
+  padding: 15px 35px; /* Horizontal padding */
+  width: 100%; /* Wider */
+  max-width: 300px; /* Limit max-width */
+  border-radius: 9999px; /* Make it a perfect capsule (very large value) */
+}
+
+.continue-button:hover {
+  background-color: #6FD46F; /* A slightly darker pastel green for hover */
+  transform: translateY(-2px);
+}
+
+/* "Cerrar sesión" button */
+.logout-button {
+  background-color: #FFD700; /* Gold for logout button */
+  color: #333; /* Dark text for contrast */
+  font-size: 1.1em;
+  padding: 12px 25px;
+  width: 80%; /* Width for good appearance */
+  max-width: 250px; /* Limit max-width */
+  border-radius: 25px; /* More circular */
+}
+
+.logout-button:hover {
+  background-color: #FFC107; /* Darker gold on hover */
+  transform: translateY(-2px);
+}
+
+/* Utility classes */
+.hidden {
+  display: none !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-gray-600 {
+  color: #6c757d;
+}
+
+.error-message {
+  color: #DC3545;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+/* Custom message box styles */
+.message-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 9999;
+    text-align: center;
+    max-width: 350px;
+    width: 90%;
+}
+
+.message-box h4 {
+    color: #FF8C00;
+    margin-bottom: 15px;
+}
+
+.message-box p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.message-box button {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
