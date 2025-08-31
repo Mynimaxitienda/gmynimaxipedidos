@@ -1,0 +1,415 @@
+/* Estilos específicos para la página de inicio de AIMOTEL */
+
+body {
+    /* Fondo degradado para el body (fondo de la página completa) */
+  background-image: url('https://raw.githubusercontent.com/Mynimaxitienda/gmynimaxitiendaimagenes/refs/heads/main/fondos/fondo1.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+    margin: 0; /* Eliminar margen predeterminado del body */
+    padding: 0; /* Eliminar padding predeterminado del body */
+    min-height: 100vh; /* Asegura que el degradado cubra toda la altura de la ventana */
+    display: flex; /* Para centrar el main-page-container verticalmente si es necesario */
+    justify-content: center; /* Para centrar el main-page-container horizontalmente */
+    align-items: center; /* Para centrar el main-page-container verticalmente */
+}
+
+/* Nuevo contenedor principal para toda la página, centrado y con márgenes */
+.main-page-container {
+    max-width: 600px; /* Aumentar el ancho máximo del contenedor principal */
+    width: 95%; /* Ajuste para ser responsivo dentro del 600px max-width */
+    margin: 20px auto; /* Centrar el contenedor y añadir margen superior/inferior */
+    border: 1px solid #ccc; /* Borde sutil para visualizar el contenedor principal */
+    border-radius: 20px; /* Esquinas redondeadas para el contenedor principal */
+    overflow: hidden; /* Asegura que los elementos con border-radius internos se recorten correctamente */
+    box-shadow: 0 0 15px rgba(0,0,0,0.1); /* Sombra suave para darle profundidad */
+    /* Asegurar que el fondo del main-page-container no tape el degradado del body */
+    background-color: transparent;
+}
+
+
+.navbar {
+    background-color: #363636 !important; /* Gris oscuro */
+    border-radius: 15px; /* Esquinas redondeadas */
+    margin: 10px; /* Margen para que se vea el redondeado */
+    padding: 10px 20px; /* Aumentar padding para dar sensación de más ancho */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #ff4785; /* Borde rosado */
+}
+
+.navbar-logo {
+    height: 85px; /* Ajusta el tamaño del logo si es necesario */
+}
+
+.user-widget {
+    margin-left: auto; /* Empuja el botón "Acceder" a la derecha */
+}
+
+.new-hero-section {
+    background-color: #ff4785; /* Color rosa del diseño */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 10px; /* Margen para que se vea el redondeado y separación del navbar */
+}
+
+.new-hero-section h1 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+.new-hero-section p {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.new-hero-section .small-text {
+    font-size: 0.8em;
+}
+
+/* Ajuste para que el hero-section quede inmediatamente debajo del header */
+.main-interface-container {
+    display: flex;
+    flex-direction: column;
+    width: 77%; /* Asegura que ocupe el 100% del ancho disponible de su padre */
+    padding: 0; /* Eliminar padding aquí, los elementos internos tendrán sus propios márgenes */
+    box-sizing: border-box;
+    /* Fondo para la interfaz según la solicitud del usuario */
+    background-image: url('https://raw.githubusercontent.com/Mynimaxitienda/gmynimaxitiendaimagenes/refs/heads/main/fondos/fondo1.jpeg');
+    background-size: cover; /* Cubre todo el contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-color: #f7f7f7; /* Un color de fondo de respaldo si la imagen no carga */
+}
+
+
+/* Styles for the "Acceder" / "Mi cuenta" button */
+.access-button {
+    background-color: #f8a572; /* Color actualizado */
+    border-color: #f8a572;
+    color: white;
+    border-radius: 20px; /* Esto le da la forma redondeada */
+    padding: 8px 15px;
+    font-size: 0.9rem;
+}
+
+.access-button:hover {
+    background-color: #e69460; /* Un tono más oscuro para el hover */
+    border-color: #e69460;
+}
+
+/* Contenedor principal del contenido para ajustar el ancho */
+.content-wrapper {
+    max-width: 450px; /* Ancho máximo del contenido principal reducido*/
+    margin: 20px auto; /* Centra el contenido y añade margen vertical */
+    width: 100%; /* Asegura que ocupe el 100% del ancho disponible hasta el max-width */
+    padding: 0 10px; /* Pequeño padding horizontal para evitar que el contenido toque los bordes */
+    box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+}
+
+/* Footer Styles (Simplified to match the image) */
+.footer {
+    background-color: #333333; /* Color de fondo oscuro como en la imagen */
+    color: white; /* Texto blanco para contraste */
+    padding: 20px 0; /* Padding vertical */
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1); /* Sutil sombra en la parte superior */
+    margin-top: 50px; /* Pushes footer to the bottom */
+    border-top: 2px solid #ff4785; /* Borde superior rosado */
+    border-radius: 15px 15px 0 0; /* Bordes redondeados solo en la parte superior */
+}
+
+.footer-content {
+    /* Bootstrap's container-fluid and row/col handle layout */
+    max-width: 800px; /* Ajusta el ancho máximo para que coincida con el content-wrapper */
+    margin: 0 auto;
+    padding: 0 15px; /* Add some horizontal padding for content */
+}
+
+.footer-content p {
+    margin: 0; /* Remove default paragraph margin */
+    font-size: 0.9rem;
+    color: #cccccc; /* Un gris claro para el texto de copyright */
+}
+
+/* Styles for the promotion section */
+.promotion-section-wrapper {
+    margin: 10px; /* Margen para separar del navbar y del chatbot */
+    border-radius: 15px;
+    overflow: hidden; /* Para contener las imágenes redondeadas */
+    background-color: #f0f0f0; /* Color de fondo para la sección de promoción */
+    padding: 10px; /* Espaciado interno */
+}
+
+.promotion-card {
+    background-color: #ffffff; /* Fondo blanco para la tarjeta de promoción */
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.promo-header {
+    width: 100%;
+    height: auto;
+}
+
+.promo-main-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+}
+
+/* Styles for the Chatbot Section */
+.chatbot-section-wrapper {
+    background-color: #363636; /* Fondo gris oscuro como en la imagen */
+    margin: 10px; /* Margen alrededor del contenedor del chatbot */
+    border-radius: 15px;
+    padding: 15px; /* Aumentar padding para dar sensación de más ancho */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.chatbot-title-bar {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.section-title {
+    color: #fff; /* Texto blanco para el título */
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.highlight-text {
+    color: #ff4785; /* Color rosa para "1 Promoción" */
+}
+
+.chatbot-container {
+    background-color: #2a2a2a; /* Fondo más oscuro para el cuerpo del chatbot */
+    border-radius: 10px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.chatbot-header {
+    background-color: #444444; /* Fondo del encabezado del chatbot */
+    padding: 10px 15px;
+    border-bottom: 1px solid #555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* New styles for chatbot header icons using Font Awesome */
+.chatbot-header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.chatbot-header-icons button {
+    background: none;
+    border: none;
+    padding: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    outline: none; /* Remove default focus outline */
+}
+
+.chatbot-header-icons button i { /* Target Font Awesome icons within buttons */
+    color: #FFA500; /* Orange color for icons */
+    font-size: 1.2em; /* Adjust size as needed */
+    transition: color 0.3s ease; /* Add transition for hover effect */
+}
+
+.chatbot-header-icons button:hover i {
+    color: #FF8C00; /* Darker orange on hover */
+}
+
+/* Hide the original image icons */
+.chatbot-header-icons img {
+    display: none; /* Hides the original image icons */
+}
+
+.chatbot-title-icon {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.chatbot-title {
+    font-weight: bold;
+}
+
+.chatbot-body {
+    padding: 15px;
+    min-height: 150px; /* Altura mínima para el cuerpo del chat */
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #2a2a2a; /* Asegurar el fondo del cuerpo del chat */
+}
+
+.chatbot-message {
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    max-width: 80%;
+}
+
+.user-message {
+    background-color: #007bff; /* Color para mensajes del usuario */
+    align-self: flex-end;
+    margin-left: auto;
+    color: white;
+}
+
+.bot-message {
+    background-color: #555555; /* Color para mensajes del bot */
+    align-self: flex-start;
+    color: white;
+}
+
+.chatbot-input {
+    display: flex;
+    padding: 10px 15px;
+    border-top: 1px solid #555;
+    background-color: #444444; /* Fondo de la barra de entrada */
+}
+
+.chatbot-input .form-control {
+    flex-grow: 1;
+    border-radius: 20px;
+    border: none;
+    padding: 8px 15px;
+    margin-right: 10px;
+    background-color: #666666; /* Color del input */
+    color: white;
+}
+
+.chatbot-input .form-control::placeholder {
+    color: #ccc;
+}
+
+.btn-send {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.btn-send img {
+    height: 30px;
+    width: 30px;
+}
+
+.quick-access-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 0 10px;
+    flex-wrap: wrap; /* Permite que los botones se envuelvan en pantallas pequeñas */
+}
+
+.btn-quick-access {
+    background-color: #f8a572; /* Color actualizado */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 0.9em;
+    margin: 5px; /* Espacio entre botones */
+    flex-grow: 1; /* Permite que los botones crezcan para llenar el espacio */
+    max-width: calc(33% - 10px); /* Aproximadamente 3 botones por fila con margen */
+}
+
+.btn-quick-access:hover {
+    background-color: #e69460; /* Un tono más oscuro para el hover */
+}
+
+
+/* Media Queries for Responsiveness - Footer adjustments for smaller screens */
+@media (max-width: 768px) {
+    .footer-content p {
+        font-size: 0.8rem; /* Smaller font for copyright on small screens */
+    }
+}
+
+/* Estilos para el Navbar */
+/* Estilos para el Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff; /* Fondo del navbar */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-icons {
+    display: flex;
+    flex-grow: 1; /* Permite que el contenedor de iconos ocupe el espacio disponible */
+    justify-content: center; /* Centra los iconos horizontalmente */
+    gap: 30px; /* Aumenta el espacio entre los iconos para una mejor presentación */
+}
+
+.navbar-icon-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out; /* Animación de transformación suave */
+}
+
+.navbar-icon-button:hover {
+    transform: scale(1.1); /* Ligero efecto de escala al pasar el mouse */
+}
+
+.navbar-icon {
+    width: 60px; /* Aumenta el tamaño de los iconos a 60px */
+    height: auto;
+}
+
+.user-widget {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Estilos para los botones de acceso rápido */
+.quick-access-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.btn-quick-access {
+    background-color: #ffc107;
+    border: none;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-quick-access:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.btn-promo { background-color: #ffc107; }
+.btn-products { background-color: #ffc107; }
+.btn-cart { background-color: #ffc107; }
+.btn-redeem-coupon { background-color: #ffc107; }
+.btn-pay { background-color: #ffc107; }
+
+
